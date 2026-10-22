@@ -90,7 +90,329 @@
     @media(max-width:880px){.final-visit .visit-grid{grid-template-columns:1fr;min-height:0;border-radius:38px}.final-visit .visit-photo{height:280px}.final-visit .visit-copy{padding:42px 28px 44px}.final-visit .visit-copy .button{align-self:stretch;width:100%;justify-content:center}.final-visit .visit-copy h2{font-size:clamp(34px,7vw,40px)}}
     @media(max-width:390px){.final-visit .visit-photo{height:270px}.final-visit .visit-copy{padding:39px 24px 41px}.final-visit .visit-copy h2{font-size:34px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.photo img{transition:none}}
+  
+
+    /* Approved top-four composition: reviewed against approved-design.png */
+    .hero--final{height:clamp(650px,calc(100svh - 74px),820px);min-height:650px;padding:0;overflow:hidden;background:var(--foam)}
+    .hero--final .hero-grid{display:block;width:100%;max-width:none;height:100%;margin:0;padding:0}
+    .hero--final .hero-visual{position:absolute;inset:0;z-index:0;margin:0}
+    .hero--final .hero-photo{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;border-radius:0;clip-path:none;box-shadow:none}
+    .hero--final .hero-photo img{object-position:50% 40%;transform:none}
+    .hero--final .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,253,246,.94) 0%,rgba(255,253,246,.86) 28%,rgba(237,249,251,.64) 43%,rgba(255,253,246,.18) 62%,rgba(255,253,246,0) 78%);pointer-events:none}
+    .hero--final .hero-copy{position:absolute;z-index:4;top:clamp(112px,15vh,190px);left:clamp(72px,7vw,102px);width:min(500px,44vw);padding:0}
+    .hero--final .hero-copy h1{font-size:clamp(72px,6.4vw,96px);line-height:1.12}
+    .hero--final .hero-lead{max-width:440px;font-size:clamp(16px,1.25vw,18px)}
+    .hero--final .hero-dots,.hero--final .hero-bubble{z-index:2}
+    .hero--final .hero-bubble--a,.hero--final .hero-bubble--b{display:none}
+    .hero--final .hero-dots--left{top:auto;left:3%;right:auto;bottom:16%;transform:scale(.62);opacity:.78}
+    .hero--final .hero-dots--right{right:7%;bottom:12%;opacity:.68}
+    .hero--final .hero-wash{z-index:2;top:7%;right:9%;width:clamp(150px,18vw,270px);opacity:.28;pointer-events:none}
+    .hero--final::after{z-index:3;height:54px;background:var(--foam);clip-path:polygon(0 58%,12% 69%,25% 54%,40% 72%,55% 55%,70% 67%,85% 48%,100% 62%,100% 100%,0 100%)}
+
+    .final-philosophy{overflow:hidden;background:linear-gradient(180deg,var(--foam) 0%,#f6fbfa 30%,var(--paper) 100%)}
+    .final-philosophy .philosophy-grid{display:flex;align-items:center;gap:clamp(36px,4vw,54px)}
+    .final-philosophy .philosophy-grid>.reveal{flex:0 1 46%;order:2;max-width:510px}
+    .final-philosophy .philosophy-scene{flex:1 1 54%;order:1;min-height:440px;padding:0 8px 18px 0}
+    .final-philosophy .philosophy-main{width:96%;height:400px;margin:8px 0 0;border:0;border-radius:49% 51% 45% 55% / 18% 20% 25% 29%;box-shadow:0 18px 42px rgba(18,98,126,.12)}
+    .final-philosophy .philosophy-detail{left:2%;right:auto;bottom:0;width:184px;height:184px;border:8px solid var(--paper);z-index:2}
+    .final-philosophy .scene-note{top:5px;right:5%;z-index:3}
+    .final-philosophy .title{font-size:clamp(30px,2.2vw,33px);line-height:1.38}
+    .final-philosophy .copy{max-width:46ch}
+
+    .final-experience{background:linear-gradient(168deg,#e9f8fb 0%,#f4fbfc 88%)}
+    .final-experience .experience-head{display:flex;flex-direction:column;align-items:center;gap:10px;margin:0 auto 42px;text-align:center}
+    .final-experience .experience-head>div{text-align:center}
+    .final-experience .experience-head .eyebrow{display:block}
+    .final-experience .experience-number{margin:10px 0 0;font-size:clamp(58px,6vw,76px);line-height:1}
+    .final-experience .experience-number span{font-size:clamp(25px,2.5vw,32px)}
+    .final-experience .experience-head .copy{max-width:700px;margin:9px auto 0;text-align:center}
+    .final-experience .experience-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,2.7vw,40px);align-items:start}
+    .final-experience .experience,.final-experience .experience:nth-child(2),.final-experience .experience:nth-child(3){margin:0}
+    .final-experience .experience-index{gap:10px;font-size:40px}
+    .final-experience .experience-index b{font-size:18px}
+    .final-experience .experience-image,.final-experience .experience:nth-child(2) .experience-image,.final-experience .experience:nth-child(3) .experience-image{height:auto;aspect-ratio:1.42/1;margin-top:13px;border-radius:36px 20px 36px 20px}
+    .final-experience .experience-image img{object-fit:cover}
+    .final-experience .experience p:last-child{max-width:34ch;margin-top:14px;font-size:14px}
+
+    .final-beach{overflow:hidden;background:linear-gradient(180deg,var(--paper),#fffdf6)}
+    .final-beach .beach-layout{display:grid;grid-template-columns:minmax(0,.66fr) minmax(0,1fr);grid-template-rows:auto auto;grid-template-areas:"head collage" "summary collage";align-items:center;column-gap:clamp(42px,6vw,82px);row-gap:25px}
+    .final-beach .beach-head{grid-area:head;display:block;margin:0;align-self:end}
+    .final-beach .beach-head>p{max-width:34ch;margin:20px 0 0}
+    .final-beach .beach-collage{grid-area:collage;grid-template-columns:minmax(0,1.9fr) minmax(0,.76fr);grid-template-rows:170px 170px;gap:16px;margin:30px 0 0}
+    .final-beach .beach-main{grid-column:1;grid-row:1/3;border-radius:42px 20px 46px 20px}
+    .final-beach .beach-side{grid-column:2;grid-row:1;border-radius:28px 28px 22px 42px}
+    .final-beach .beach-kids{display:block;grid-column:2;grid-row:2;border-radius:20px 42px 22px 32px}
+    .final-beach .beach-summary{grid-area:summary;display:block;max-width:420px;margin:0;align-self:start}
+    .final-beach .beach-summary strong{display:block;font-size:20px}
+    .final-beach .beach-summary span{display:block;margin-top:8px;font-size:14px;line-height:1.9}
+
+    @media(max-width:1099px) and (min-width:768px){
+      .hero--final{height:clamp(630px,calc(100svh - 74px),760px);min-height:630px}
+      .hero--final .hero-copy{left:clamp(54px,6vw,72px);width:min(460px,47vw)}
+      .final-philosophy .philosophy-grid{gap:30px}
+      .final-philosophy .title{font-size:30px}
+      .final-philosophy .philosophy-main{height:350px}
+      .final-philosophy .philosophy-scene{min-height:390px}
+      .final-philosophy .philosophy-detail{width:150px;height:150px}
+      .final-beach .beach-layout{grid-template-columns:minmax(0,.72fr) minmax(0,1fr);column-gap:34px}
+      .final-beach .beach-collage{grid-template-rows:145px 145px;gap:12px}
+    }
+    @media(max-width:767px){
+      .hero--final{height:clamp(520px,72svh,630px);min-height:520px}
+      .hero--final .hero-copy{top:54px;left:22px;width:min(390px,calc(100% - 44px));padding:0}
+      .hero--final .hero-copy h1{font-size:clamp(56px,15.8vw,68px);letter-spacing:.035em;line-height:1.08}
+      .hero--final .hero-copy h1 span{margin-left:0}
+      .hero--final .hero-copy h1::after{margin-top:14px}
+      .hero--final .hero-lead{max-width:34ch;margin-top:15px;font-size:15px;line-height:1.75}
+      .hero--final .hero-school{margin-top:9px;font-size:12px}
+      .hero--final .hero-copy .actions{display:flex;gap:8px;margin-top:15px}
+      .hero--final .hero-copy .actions .button{width:auto;min-height:44px;padding:10px 13px;font-size:12px}
+      .hero--final .hero-photo img{object-position:56% 40%}
+      .hero--final .hero-photo::after{background:linear-gradient(90deg,rgba(255,253,246,.94) 0%,rgba(255,253,246,.87) 52%,rgba(237,249,251,.63) 75%,rgba(255,253,246,.18) 100%)}
+      .hero--final::after{height:38px}
+      .hero--final .hero-dots--left{top:8%;right:7%;transform:scale(.65)}
+      .hero--final .hero-dots--right{display:none}
+      .hero--final .hero-wash{top:auto;right:3%;bottom:10%;width:105px;opacity:.24}
+
+      .final-philosophy .philosophy-grid{display:flex;flex-direction:column;align-items:stretch;gap:30px}
+      .final-philosophy .title{font-size:clamp(24px,6.2vw,27px);text-wrap:balance}
+      .final-philosophy .philosophy-scene,.final-philosophy .philosophy-grid>.reveal{flex:0 0 auto;order:initial;width:100%}
+      .final-philosophy .philosophy-scene{min-height:0;padding:0 0 16px}
+      .final-philosophy .philosophy-main{width:100%;height:auto;aspect-ratio:1.34/1;margin:0;border-radius:46% 54% 43% 57% / 18% 20% 24% 28%}
+      .final-philosophy .philosophy-detail{bottom:0;left:3%;width:128px;height:128px;border-width:7px}
+      .final-philosophy .scene-note{top:0;right:5%;font-size:19px}
+      .final-philosophy .philosophy-grid>.reveal{text-align:center;margin-inline:auto}
+      .final-philosophy .copy{max-width:43ch;margin-inline:auto}
+      .final-philosophy .actions{justify-content:center}
+
+      .final-experience .experience-head{margin-bottom:34px}
+      .final-experience .experience-number{font-size:58px}
+      .final-experience .experience-grid{grid-template-columns:1fr;gap:38px}
+      .final-experience .experience,.final-experience .experience:nth-child(2),.final-experience .experience:nth-child(3){max-width:560px;margin:0 auto;width:100%}
+      .final-experience .experience-image,.final-experience .experience:nth-child(2) .experience-image,.final-experience .experience:nth-child(3) .experience-image{aspect-ratio:1.38/1}
+      .final-experience .experience-index{font-size:36px}
+      .final-experience .experience p:last-child{max-width:40ch}
+
+      .final-beach .beach-layout{grid-template-columns:1fr;grid-template-rows:auto auto auto;grid-template-areas:"head" "collage" "summary";gap:25px}
+      .final-beach .beach-head>p{margin-top:12px}
+      .final-beach .beach-collage{grid-template-columns:1fr 1fr;grid-template-rows:245px 142px;gap:11px;margin:0}
+      .final-beach .beach-main{grid-column:1/3;grid-row:1;border-radius:32px 16px 34px 16px}
+      .final-beach .beach-side{grid-column:1;grid-row:2;border-radius:22px 15px 22px 15px}
+      .final-beach .beach-kids{grid-column:2;grid-row:2;border-radius:15px 26px 15px 24px}
+      .final-beach .beach-summary{max-width:none;margin:0}
+      .final-beach .beach-summary strong{font-size:18px}
+      .final-beach .beach-summary span{font-size:14px}
+    }
+    @media(max-width:430px){
+      .hero--final .hero-copy{top:44px;left:18px;width:calc(100% - 36px)}
+      .hero--final .hero-copy h1{font-size:clamp(54px,15vw,62px)}
+      .hero--final .hero-lead{font-size:14px}
+      .hero--final .hero-copy .actions .button{padding-inline:10px;font-size:11px}
+      .final-beach .beach-collage{grid-template-rows:225px 132px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .hero--final .hero-copy,.hero--final .hero-visual,.final-philosophy .philosophy-grid>.reveal,.final-experience .experience-head,.final-experience .experience,.final-beach .beach-head,.final-beach .beach-collage,.final-beach .beach-summary{opacity:1;transform:none;transition:none}
+    }
+
+    /* V3 polish: scoped overrides for the approved composition; all photo files and copy stay intact. */
+    .hero--final .hero-copy{top:clamp(104px,14vh,176px)}
+    .hero--final .hero-copy h1::after{margin-top:18px}
+    .hero--final .hero-lead{margin-top:18px}
+    .hero--final .hero-school{margin-top:11px}
+    .hero--final .hero-copy .actions{margin-top:20px}
+    .hero--final .hero-photo::after{background:linear-gradient(90deg,rgba(255,253,246,.86) 0%,rgba(255,253,246,.73) 28%,rgba(237,249,251,.48) 43%,rgba(255,253,246,.14) 62%,rgba(255,253,246,0) 78%)}
+
+    .final-philosophy{padding-block:clamp(84px,7vw,104px)}
+    .final-philosophy .philosophy-grid{gap:clamp(30px,3.1vw,44px)}
+    .final-philosophy .philosophy-grid>.reveal{flex:0 1 46%;max-width:530px}
+    .final-philosophy .philosophy-scene{flex:1 1 54%;min-height:420px;padding:0}
+    .final-philosophy .philosophy-main{width:min(100%,408px);height:400px;margin:8px 0 0 auto;transform:translateX(-46px)}
+    .final-philosophy .philosophy-detail{left:8px;bottom:0;width:220px;height:220px;border-width:8px}
+    .final-philosophy .title{font-size:40px;line-height:1.26;letter-spacing:-.025em}
+    .final-philosophy .copy{max-width:46ch}
+    .final-philosophy .actions{margin-top:20px}
+
+    .final-experience{padding-block:clamp(82px,7.4vw,108px)}
+    .final-experience .experience-head{margin-bottom:34px}
+    .final-experience .experience-image,.final-experience .experience:nth-child(2) .experience-image,.final-experience .experience:nth-child(3) .experience-image{margin-top:11px}
+    .final-experience .experience p:last-child{margin-top:11px;color:#526f7a;font-size:16px;line-height:1.9}
+
+    @media(min-width:768px){
+      .final-beach .beach-layout{column-gap:clamp(36px,5vw,70px)}
+      .final-beach .beach-collage{grid-template-rows:180px 180px;margin-top:16px}
+    }
+
+    .final-day .day-title::after{top:calc(100% + 18px)}
+    .final-teachers h2.title{font-size:clamp(44px,3.75vw,54px);line-height:1.25;letter-spacing:0;text-wrap:balance}
+
+    .final-philosophy .copy,.final-experience .copy,.final-beach .copy,.final-discovery .copy,.final-daily .copy,.final-day .copy,.final-teachers .copy{color:#526f7a;font-size:16px;line-height:1.9}
+    .final-beach .beach-head>p{color:#526f7a;font-size:16px;line-height:1.9}
+    .final-beach .beach-summary span{color:#526f7a;font-size:16px;line-height:1.9}
+    .final-daily .daily-note{color:#526f7a;font-size:16px;line-height:1.9}
+    .final-day .day-step>p:not(.day-time){color:#526f7a;font-size:16px;line-height:1.9}
+    .final-day .disclaimer{color:#526f7a}
+    .final-facility .facility-caption{color:#526f7a;font-size:16px;line-height:1.9}
+
+    @media(max-width:1099px) and (min-width:768px){
+      .final-philosophy{padding-block:clamp(72px,7.2vw,88px)}
+      .final-philosophy .philosophy-grid{gap:22px}
+      .final-philosophy .philosophy-grid>.reveal{flex:0 1 52%;max-width:460px}
+      .final-philosophy .philosophy-scene{flex:1 1 48%;min-height:390px}
+      .final-philosophy .philosophy-main{width:min(100%,408px);height:350px;transform:translateX(-20px)}
+      .final-philosophy .philosophy-detail{left:8px;width:176px;height:176px}
+      .final-philosophy .title{font-size:clamp(28px,3.4vw,35px);line-height:1.28;letter-spacing:-.025em}
+      .final-teachers h2.title{font-size:clamp(31px,4.15vw,44px);line-height:1.25;letter-spacing:0}
+      .final-beach .beach-collage{grid-template-rows:154px 154px;gap:12px;margin-top:16px}
+    }
+    @media(max-width:820px) and (min-width:768px){
+      .final-philosophy .philosophy-main{transform:none}
+      .final-philosophy .title{font-size:28px}
+    }
+
+    @media(max-width:767px){
+      .hero--final .hero-copy{top:clamp(42px,6svh,54px);left:22px;width:min(390px,calc(100% - 44px))}
+      .hero--final .hero-copy h1::after{margin-top:12px}
+      .hero--final .hero-lead{margin-top:12px}
+      .hero--final .hero-school{margin-top:8px}
+      .hero--final .hero-copy .actions{margin-top:12px}
+      .hero--final .hero-photo::after{background:linear-gradient(90deg,rgba(255,253,246,.76) 0%,rgba(255,253,246,.64) 46%,rgba(237,249,251,.38) 76%,rgba(255,253,246,.10) 100%)}
+      .final-philosophy{padding-block:84px}
+      .final-philosophy .philosophy-grid{gap:24px}
+      .final-philosophy .philosophy-grid>.reveal{flex:0 0 auto;max-width:100%}
+      .final-philosophy .philosophy-scene{flex:0 0 auto;min-height:0;padding:0 0 16px}
+      .final-philosophy .philosophy-main{width:100%;max-width:none;height:auto;aspect-ratio:1.34/1;margin:0;transform:none}
+      .final-philosophy .philosophy-detail{position:relative;right:auto;bottom:auto;left:auto;width:128px;height:128px;margin:-46px 0 0 auto;border-width:7px}
+      .final-philosophy .title{font-size:clamp(24px,6.5vw,28px);line-height:1.3;letter-spacing:-.015em;text-wrap:balance}
+      .final-philosophy .copy{max-width:43ch;margin-inline:auto}
+      .final-philosophy .actions{justify-content:center;margin-top:18px}
+      .final-experience{padding-block:84px}
+      .final-experience .experience-head{margin-bottom:34px}
+      .final-day .day-title::after{top:calc(100% + 14px);height:1500px}
+      .final-teachers h2.title{font-size:clamp(27px,7.4vw,34px);line-height:1.28;letter-spacing:-.02em}
+    }
+    @media(max-width:430px){
+      .hero--final .hero-copy{left:18px;width:calc(100% - 36px)}
+    }
+
   </style>
+
+<style id="layout-v6-precision">
+/* V6 Discovery: keep the title, explanation and two existing photos in one centered story. */
+#discovery.section{padding-block:clamp(44px,3.3vw,50px)}
+#discovery .discovery-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(22px,2.1vw,30px)}
+#discovery .discovery-grid>.reveal:first-child{display:flex;flex-direction:column;align-items:center;width:min(100%,780px);margin-inline:auto;text-align:center}
+#discovery .discovery-grid>.reveal:first-child>.eyebrow{margin:0}
+#discovery .discovery-grid>.reveal:first-child>.title{width:100%;max-width:100%;margin:8px 0 0;font-size:clamp(40px,3vw,42px);line-height:1.2;text-align:center}
+#discovery .discovery-grid>.reveal:first-child>.copy{width:min(100%,600px);max-width:600px;margin:14px 0 0;font-size:16px;line-height:1.85;text-align:left}
+#discovery .discovery-scene{display:grid;grid-template-columns:minmax(0,340px) minmax(0,214px);justify-content:center;align-items:center;gap:22px;width:min(100%,660px);min-height:0;margin:0 auto;padding:0}
+#discovery .discovery-main{position:relative;top:auto;right:auto;width:340px;max-width:100%;margin:0;padding:10px 10px 30px;transform:none}
+#discovery .discovery-main>.photo{height:auto;aspect-ratio:1}
+#discovery .discovery-small{position:relative;bottom:auto;left:auto;width:min(100%,214px);height:auto;aspect-ratio:1;margin:0;border-width:7px}
+
+/* V6 Daily: preserve the existing photo-first story while giving the Japanese heading its actual reading width. */
+#daily.section{padding-block:clamp(78px,7vw,100px)}
+#daily .container{width:min(1220px,calc(100% - var(--gutter)*2))}
+#daily .daily-story{display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);grid-template-rows:auto;align-items:center;gap:clamp(30px,2.5vw,36px)}
+#daily .daily-story>.daily-main{grid-column:1;grid-row:1;width:100%;height:auto;aspect-ratio:4/3;margin:0}
+#daily .daily-story>.daily-main img{object-position:center 47%}
+#daily .daily-story-aside{display:grid;grid-column:2;grid-row:1;align-content:center;gap:clamp(18px,1.6vw,22px);min-width:0}
+#daily .daily-story-copy{display:block;min-width:0;margin:0}
+#daily .daily-story-copy>.eyebrow{margin:0 0 7px}
+#daily .daily-story-copy>.title{width:100%;max-width:none;margin:8px 0 12px;font-size:clamp(40px,2.92vw,42px);line-height:1.26;letter-spacing:.015em}
+#daily .daily-story-copy>.copy{max-width:560px;margin:0;font-size:16px;line-height:1.9}
+#daily .daily-support-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto;align-items:start;gap:12px 14px;width:min(100%,560px);min-width:0}
+#daily .daily-support-grid>.daily-tall{grid-column:1;grid-row:1;width:100%;height:auto;aspect-ratio:3/2;margin:0}
+#daily .daily-support-grid>.daily-small{grid-column:2;grid-row:1;align-self:start;width:100%;height:auto;aspect-ratio:3/2;margin:0}
+#daily .daily-support-grid>.daily-note{grid-column:1/-1;grid-row:2;margin:0}
+
+/* Keep the established V5 schedule center spine and measurements unchanged. */
+@media(min-width:768px){
+  .final-day .day-heading{width:min(100%,700px);margin-inline:auto;text-align:center}
+  .final-day .day-heading>.copy{max-width:560px;margin-inline:auto}
+  .final-day .day-list{width:min(100%,1080px);margin:34px auto 0;gap:18px}
+  .final-day .day-photos{width:min(100%,1040px);margin:38px auto 0}
+}
+
+/* At tablet widths the heading keeps the full readable measure; the story then stacks. */
+@media(max-width:1099px){
+  #daily .daily-story{grid-template-columns:minmax(0,1fr);gap:26px}
+  #daily .daily-story>.daily-main{grid-column:1;grid-row:1;width:min(100%,760px);height:auto;aspect-ratio:4/3;margin-inline:auto}
+  #daily .daily-story-aside{display:grid;grid-column:1;grid-row:2;grid-template-columns:minmax(0,1fr);gap:22px;width:min(100%,760px);margin-inline:auto}
+  #daily .daily-story-copy>.title{font-size:40px;line-height:1.28}
+  #daily .daily-story-copy>.copy{max-width:560px}
+  #daily .daily-support-grid{width:min(100%,560px)}
+}
+
+@media(max-width:767px){
+  #discovery.section{padding-block:54px 58px}
+  #discovery .discovery-grid{gap:22px}
+  #discovery .discovery-grid>.reveal:first-child>.title{font-size:37px;line-height:1.24}
+  #discovery .discovery-grid>.reveal:first-child>.copy{width:100%;max-width:600px;font-size:16px;line-height:1.85}
+  #discovery .discovery-scene{grid-template-columns:minmax(0,1fr);gap:14px;width:min(100%,344px)}
+  #discovery .discovery-main{width:min(100%,344px);padding:9px 9px 26px}
+  #discovery .discovery-small{width:200px;max-width:100%;margin-inline:auto;border-width:7px}
+  #daily.section{padding-block:68px 72px}
+  #daily .daily-story{gap:22px}
+  #daily .daily-story>.daily-main{width:100%;max-width:760px}
+  #daily .daily-story-aside{gap:22px;width:100%;max-width:760px}
+  #daily .daily-story-copy>.title{font-size:clamp(36px,8.5vw,40px);line-height:1.3;letter-spacing:.015em}
+  #daily .daily-story-copy>.copy{font-size:16px;line-height:1.9}
+  #daily .daily-support-grid{width:100%;gap:12px}
+}
+
+@media(max-width:390px){
+  #daily .daily-story-copy>.title{font-size:36px}
+  #daily .daily-support-grid{grid-template-columns:minmax(0,1fr)}
+  #daily .daily-support-grid>.daily-tall,#daily .daily-support-grid>.daily-small{grid-column:1;grid-row:auto;width:100%;aspect-ratio:3/2}
+  #daily .daily-support-grid>.daily-note{grid-column:1;grid-row:auto}
+}
+
+
+    /* V7: Discovery becomes one editorial scene; photo sources and copy stay identical. */
+    #discovery.section{padding-block:72px}
+    #discovery .discovery-v7{display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;gap:24px;width:min(100%,1160px)}
+    #discovery .discovery-editorial{display:flex;flex-direction:column;align-items:center;width:min(100%,800px);margin-inline:auto;text-align:center}
+    #discovery .discovery-editorial>.eyebrow{margin:0}
+    #discovery .discovery-editorial>.title{width:min(100%,740px);max-width:740px;margin:8px 0 0;font-size:40px;line-height:1.2;text-align:center}
+    #discovery .discovery-editorial>.copy{width:min(100%,760px);max-width:760px;margin:16px 0 0;font-size:16px;line-height:1.85;text-align:left}
+    #discovery .discovery-scene{display:grid;grid-template-columns:minmax(0,350px) minmax(0,480px);justify-content:center;align-items:center;gap:24px;width:min(100%,920px);min-height:0;margin:0 auto;padding:0}
+    #discovery .discovery-main{position:relative;top:auto;right:auto;bottom:auto;left:auto;width:350px;max-width:100%;margin:0;padding:10px 10px 27px;border-radius:5px 5px 20px 5px;transform:none}
+    #discovery .discovery-main>.photo{height:auto;aspect-ratio:1;border-radius:4px}
+    #discovery .discovery-small{position:relative;top:auto;right:auto;bottom:auto;left:auto;justify-self:stretch;align-self:center;display:grid;place-items:center;width:min(100%,480px);height:390px;margin:0;padding:0;border:0;border-radius:32px 20px 36px 22px;background:var(--paper);box-shadow:0 16px 34px rgba(18,98,126,.12);overflow:hidden}
+    #discovery .discovery-small>img{display:block;width:390px;height:390px;max-width:100%;margin:auto;object-fit:contain;border-radius:20px}
+    @media(min-width:1100px){
+      .final-beach.section,.final-teachers.section,.final-facility.section{padding-block:clamp(88px,7.2vw,104px)}
+    }
+    @media(max-width:1099px) and (min-width:768px){
+      #discovery .discovery-scene{grid-template-columns:minmax(0,.88fr) minmax(0,1fr);gap:clamp(16px,2.2vw,22px);width:min(100%,920px)}
+      #discovery .discovery-main{width:100%;padding:9px 9px 24px}
+      #discovery .discovery-small{width:100%;height:auto;aspect-ratio:1.08/1}
+      #discovery .discovery-small>img{width:auto;height:100%;max-width:100%;object-fit:contain}
+    }
+    @media(max-width:767px){
+      #discovery.section{padding-block:54px 58px}
+      #discovery .discovery-v7{gap:20px;width:100%}
+      #discovery .discovery-editorial{width:100%;align-items:center}
+      #discovery .discovery-editorial>.title{width:100%;font-size:34px;line-height:1.23;margin-top:7px}
+      #discovery .discovery-editorial>.copy{width:min(100%,390px);max-width:390px;font-size:16px;line-height:1.85;margin-top:14px}
+      #discovery .discovery-scene{grid-template-columns:minmax(0,1fr);justify-items:center;gap:14px;width:min(100%,390px)}
+      #discovery .discovery-main{width:min(100%,350px);padding:9px 9px 25px}
+      #discovery .discovery-main>.photo{height:auto;aspect-ratio:1}
+      #discovery .discovery-small{display:grid;width:100%;height:auto;aspect-ratio:1;padding:0;border-radius:28px 18px 32px 18px}
+      #discovery .discovery-small>img{width:100%;height:100%;max-width:none;object-fit:contain;border-radius:22px}
+    }
+    @media(max-width:390px){
+      #discovery .discovery-editorial>.title{font-size:32px;line-height:1.25}
+      #discovery .discovery-v7{gap:18px}
+    }
+
+    /* V8: align desktop/tablet Hero copy to the existing .container grid; keep V7 mobile offsets. */
+    @media(min-width:768px){
+      .hero--final .hero-copy{left:max(var(--gutter),calc((100% - var(--max))/2))}
+    }
+
+</style>
+
 </head>
 <body>
   <div class="progress" aria-hidden="true"></div>
@@ -105,16 +427,16 @@
       <div class="hero-visual reveal delay-1"><figure class="photo hero-photo"><img src="images/sea-1.jpg" alt="海辺を走る子どもたち"></figure></div>
     </div></section>
     <section id="philosophy" class="section final-philosophy"><span class="section-pebble section-pebble--blue" aria-hidden="true"></span><span class="section-pebble section-pebble--yellow" aria-hidden="true"></span><div class="container philosophy-grid">
-      <div class="reveal"><p class="eyebrow">私たちの思い</p><h2 class="title">海のそばで、<br>子どもはもっと自由になる。</h2><p class="copy">波の音、砂の感触、風の匂い。身近な自然との出会いが、子どもたちの「やってみたい」を育てます。見つけたことを誰かに伝え、また次の発見へ向かう。その小さな往復を大切にしています。</p><div class="actions"><a class="button" href="#experience">3つの体験を見る <i class="fa-solid fa-arrow-right"></i></a></div></div>
       <div class="philosophy-scene reveal delay-1"><figure class="photo philosophy-main"><img src="images/sea-7.jpg" alt="海辺で同じ景色を見つめる子どもたち"></figure><figure class="photo philosophy-detail"><img src="generated-assets/nagisa-2026-10-01/scene_philosophy_share_discovery_01.webp" alt="先生に小さな発見を見せる子ども"></figure><p class="scene-note hand">Umibe Demo<br>Kodomoen</p></div>
+      <div class="reveal"><p class="eyebrow">私たちの思い</p><h2 class="title">海のそばで、<br>子どもはもっと自由になる。</h2><p class="copy">波の音、砂の感触、風の匂い。身近な自然との出会いが、子どもたちの「やってみたい」を育てます。見つけたことを誰かに伝え、また次の発見へ向かう。その小さな往復を大切にしています。</p><div class="actions"><a class="button" href="#experience">3つの体験を見る <i class="fa-solid fa-arrow-right"></i></a></div></div>
     </div></section>
     <section id="experience" class="section section--foam wave-top wave-bottom final-experience"><div class="container">
-      <div class="experience-head"><div class="reveal"><p class="eyebrow">海があるからできる</p><h2 class="experience-number">3<span>つの体験</span></h2></div><p class="copy reveal delay-1">子どもたちは自然の中で、感じ、見つけ、試してみる。毎日の小さな経験が、その子らしい次の一歩につながります。</p></div>
-      <div class="experience-grid"><article class="experience reveal"><p class="experience-index">01 <b>感じる</b></p><figure class="photo experience-image"><img src="images/sea-8.jpg" alt="波打ち際の水と砂に触れる子どもの足"></figure><p>波の音や砂の感触に、五感をひらく時間。</p></article><article class="experience reveal delay-1"><p class="experience-index">02 <b>見つける</b></p><figure class="photo experience-image"><img src="images/sea-4.jpg" alt="砂浜で貝殻を見つける子どもの手"></figure><p>足もとの小さな発見から、好奇心が広がります。</p></article><article class="experience reveal delay-2"><p class="experience-index">03 <b>やってみる</b></p><figure class="photo experience-image experience-try"><img src="generated-assets/nagisa-2026-10-01/scene_experience_try_01.webp" alt="砂と水の流れを試す子どもたち"></figure><p>友だちと考え、遊び、自分らしく挑戦します。</p></article></div>
+      <div class="experience-head"><div class="reveal"><p class="eyebrow">海があるからできる</p><h2 class="experience-number">3<span>つの体験</span></h2></div><p class="copy reveal delay-1">子どもたちは自然の中で、感じ、見つけ、試してみる。<br>毎日の小さな経験が、その子らしい次の一歩につながります。</p></div>
+      <div class="experience-grid"><article class="experience reveal"><p class="experience-index">01 <b>感じる</b></p><figure class="photo experience-image"><img src="images/sea-8.jpg" alt="波打ち際の水と砂に触れる子どもの足"></figure><p>波の音や砂の感触に、<br>五感をひらく時間。</p></article><article class="experience reveal delay-1"><p class="experience-index">02 <b>見つける</b></p><figure class="photo experience-image"><img src="images/sea-4.jpg" alt="砂浜で貝殻を見つける子どもの手"></figure><p>足もとの小さな発見から、<br>好奇心が広がります。</p></article><article class="experience reveal delay-2"><p class="experience-index">03 <b>やってみる</b></p><figure class="photo experience-image experience-try"><img src="generated-assets/nagisa-2026-10-01/scene_experience_try_01.webp" alt="砂と水の流れを試す子どもたち"></figure><p>友だちと考え、<br>遊び、自分らしく挑戦します。</p></article></div>
     </div></section>
-    <section class="section final-beach"><span class="beach-sun" aria-hidden="true"></span><div class="container beach-head reveal"><div><p class="eyebrow">海と遊ぶ、海から学ぶ</p><h2 class="title">海辺の遊び</h2></div><p>海は、毎日ちがう表情を見せてくれる遊び場です。</p></div><div class="container beach-collage reveal delay-1"><figure class="photo beach-main"><img src="generated-assets/nagisa-2026-10-01/scene_beach_group_play_01.webp" alt="砂の道を協力してつくる子どもたち"></figure><figure class="photo beach-side"><img src="generated-assets/nagisa-2026-10-01/scene_beach_teacher_children_01.webp" alt="先生と水際の発見を共有する子どもたち"></figure><figure class="photo beach-kids"><img src="images/sea-6.jpg" alt="海辺で遊ぶ子どもたち"></figure></div><div class="container beach-summary reveal delay-2"><strong>走る。触る。見つける。</strong><span>その日の波や風も、子どもたちの遊びの一部になります。今日の気づきが、明日の「やってみたい」につながっていきます。</span></div></section>
-    <section id="discovery" class="section section--sand final-discovery"><span class="discovery-orbit" aria-hidden="true"></span><div class="container discovery-grid"><div class="reveal"><p class="eyebrow">SMALL DISCOVERY</p><h2 class="title">今日、海で<br>見つけたもの。</h2><p class="copy">小さな発見が、思い出になる。手のひらにのる貝、濡れた砂、光る水面。見つけたものを誰かに伝えたくなる時間です。</p></div><div class="discovery-scene reveal delay-1"><figure class="polaroid discovery-main"><div class="photo"><img src="images/sea-9.jpg" alt="砂浜で光るシーグラスと貝殻"></div></figure><figure class="photo discovery-small"><img src="generated-assets/nagisa-2026-10-01/scene_discovery_share_01.webp" alt="見つけたシーグラスと貝を見せ合う子どもたち"></figure></div></div></section>
-    <section id="daily" class="section final-daily"><div class="container"><div class="daily-intro reveal"><div><p class="eyebrow">海の日も、海じゃない日も。</p><h2 class="title">毎日の暮らしにも、<br>たくさんの「好き」がある。</h2></div><p class="copy">海辺での活動だけではなく、先生や友だちと過ごす時間、ゆっくり休む時間も、一人ひとりの「好き」を見つける大切な時間です。</p></div><div class="daily-mosaic reveal delay-1"><figure class="photo daily-main"><img src="generated-assets/nagisa-2026-10-01/scene_everyday_indoor_play_01.webp" alt="保育室で自由にブロック遊びをする子どもたち"></figure><figure class="photo daily-tall"><img src="generated-assets/nagisa-local-final-2026-10-01/scene_everyday_craft_close_02.png" alt="自然素材を使い集中して制作する子ども"></figure><figure class="photo daily-small"><img src="generated-assets/nagisa-2026-10-01/scene_everyday_lunch_01.webp" alt="先生と一緒に給食を食べる子どもたち"></figure><p class="daily-note">給食・制作・室内活動などの日常の写真は、公開前に実際の園生活を伝える確認済み素材へ差し替えてください。</p></div></div></section>
+    <section class="section final-beach"><span class="beach-sun" aria-hidden="true"></span><div class="container beach-layout"><div class="beach-head reveal"><div><p class="eyebrow">海と遊ぶ、海から学ぶ</p><h2 class="title">海辺の遊び</h2></div><p>海は、毎日ちがう表情を見せてくれる遊び場です。</p></div><div class="beach-collage reveal delay-1"><figure class="photo beach-main"><img src="generated-assets/nagisa-2026-10-01/scene_beach_group_play_01.webp" alt="砂の道を協力してつくる子どもたち"></figure><figure class="photo beach-side"><img src="generated-assets/nagisa-2026-10-01/scene_beach_teacher_children_01.webp" alt="先生と水際の発見を共有する子どもたち"></figure><figure class="photo beach-kids"><img src="images/sea-6.jpg" alt="海辺で遊ぶ子どもたち"></figure></div><div class="beach-summary reveal delay-2"><strong>走る。触る。見つける。</strong><span>その日の波や風も、子どもたちの遊びの一部になります。今日の気づきが、明日の「やってみたい」につながっていきます。</span></div></div></section>
+    <section id="discovery" class="section section--sand final-discovery"><span class="discovery-orbit" aria-hidden="true"></span><div class="container discovery-v7"><header class="discovery-editorial reveal"><p class="eyebrow">SMALL DISCOVERY</p><h2 class="title">今日、海で<br>見つけたもの。</h2><p class="copy">小さな発見が、思い出になる。手のひらにのる貝、濡れた砂、光る水面。見つけたものを誰かに伝えたくなる時間です。</p></header><div class="discovery-scene reveal delay-1"><figure class="polaroid discovery-main"><div class="photo"><img src="images/sea-9.jpg" alt="砂浜で光るシーグラスと貝殻"></div></figure><figure class="photo discovery-small"><img src="generated-assets/nagisa-2026-10-01/scene_discovery_share_01.webp" alt="見つけたシーグラスと貝を見せ合う子どもたち"></figure></div></div></section>
+    <section id="daily" class="section final-daily"><div class="container"><div class="daily-mosaic daily-story reveal delay-1"><figure class="photo daily-main"><img src="generated-assets/nagisa-2026-10-01/scene_everyday_indoor_play_01.webp" alt="保育室で自由にブロック遊びをする子どもたち"></figure><div class="daily-story-aside"><div class="daily-intro daily-story-copy"><p class="eyebrow">海の日も、海じゃない日も。</p><h2 class="title">毎日の暮らしにも、<br>たくさんの「好き」がある。</h2><p class="copy">海辺での活動だけではなく、先生や友だちと過ごす時間、ゆっくり休む時間も、一人ひとりの「好き」を見つける大切な時間です。</p></div><div class="daily-support-grid"><figure class="photo daily-tall"><img src="generated-assets/nagisa-local-final-2026-10-01/scene_everyday_craft_close_02.png" alt="自然素材を使い集中して制作する子ども"></figure><figure class="photo daily-small"><img src="generated-assets/nagisa-2026-10-01/scene_everyday_lunch_01.webp" alt="先生と一緒に給食を食べる子どもたち"></figure><p class="daily-note">給食・制作・室内活動などの日常の写真は、公開前に実際の園生活を伝える確認済み素材へ差し替えてください。</p></div></div></div></div></section>
     <section id="schedule" class="section day wave-top wave-bottom final-day"><div class="container"><header class="day-heading reveal"><p class="eyebrow">A DAY AT UMIBE</p><h2 class="title day-title">子どもたちの、<br>ある1日。</h2><p class="copy">朝の「おはよう」から、帰りの「また明日」まで。園で過ごす時間の流れをご紹介します。</p></header><div class="day-list"><article class="day-step reveal"><p class="day-time">08:00</p><h3>登園</h3><p>先生や友だちとの「おはよう」から、一日が始まります。</p></article><article class="day-step reveal delay-1"><p class="day-time">10:00</p><h3>海辺の時間</h3><p>朝の会を経て、波や砂、風と出会う時間です。</p></article><article class="day-step reveal delay-2"><p class="day-time">11:30</p><h3>お昼ごはん</h3><p>たくさん遊んだあとは、みんなで食べる時間です。</p></article><article class="day-step reveal delay-1"><p class="day-time">15:00</p><h3>午後の遊び</h3><p>ゆっくり休む時間のあとも、それぞれの遊びが続きます。</p></article><article class="day-step reveal delay-2"><p class="day-time">17:00</p><h3>降園</h3><p>今日の出来事を抱えて、「また明日」。</p></article></div><div class="day-photos reveal"><figure class="photo day-photo--arrival"><img src="generated-assets/nagisa-2026-10-01/scene_daily_arrival_02.webp" alt="ロッカーに荷物をしまい一日を始める子ども"></figure><figure class="photo day-photo--lunch"><img src="generated-assets/nagisa-2026-10-01/scene_daily_lunch_01.webp" alt="給食を食べる子どもたち"></figure><figure class="photo day-photo--quiet"><img src="generated-assets/nagisa-2026-10-01/scene_daily_quiet_time_01.webp" alt="絵本を読む静かな時間"></figure><figure class="photo day-photo--afternoon"><img src="generated-assets/nagisa-2026-10-01/scene_daily_afternoon_play_01.webp" alt="園庭で自由に遊ぶ子どもたち"></figure></div><p class="disclaimer">※活動の流れは紹介用の構成です。実際の保育時間・活動内容・写真は、園の確認済み情報へ差し替えてください。</p></div></section>
     <section id="teachers" class="section final-teachers"><div class="container teachers-grid"><div class="teacher-scene reveal"><figure class="photo teacher-main"><img src="images/sea-2.jpg" alt="先生と子どもが海辺で発見を分かち合う様子"></figure><figure class="photo teacher-side"><img src="generated-assets/nagisa-2026-10-01/scene_teachers_group_01.webp" alt="絵本と自然素材を囲む先生と子どもたち"></figure></div><div class="reveal delay-1"><p class="eyebrow">先生との関わり</p><h2 class="title">子どもを育てるのは、<br>海だけじゃない。</h2><p class="copy">一人ひとりの気づきに耳を傾け、見守り、ときには一緒に驚く。子どもたちの毎日に寄り添う、大人の存在も大切にしています。</p><ul class="teacher-links"><li><a href="#growth">保育で大切にしていること →</a></li><li><a href="#safety">安心・安全について →</a></li></ul></div></div></section>
 <section id="growth" class="section section--sand final-growth"><div class="container"><header class="growth-head reveal"><p class="eyebrow">園で大切にしていること</p><h2 class="title">毎日の中にある、<br>小さな育ち。</h2></header><div class="growth-list"><article class="growth-item reveal"><figure class="growth-illustration"><img src="generated-assets/nagisa-growth-photo-v2-2026-10-01/growth-choose-photo-02.png" alt="棚に並ぶ自然物や遊び道具から自分で選ぼうとする幼い子ども"></figure><span class="growth-step">01</span><h3>自分で選ぶ</h3><p>「やってみたい」という気持ちから、その子らしい遊びが始まります。</p></article><article class="growth-item reveal delay-1"><figure class="growth-illustration"><img src="generated-assets/nagisa-growth-photo-v2-2026-10-01/growth-together-photo-02.png" alt="床の上で木製レールを一緒につなげる三人の子ども"></figure><span class="growth-step">02</span><h3>友だちと過ごす</h3><p>同じ時間を共有しながら、相手の気持ちや違いに出会います。</p></article><article class="growth-item reveal delay-2"><figure class="growth-illustration"><img src="generated-assets/nagisa-growth-photo-v2-2026-10-01/growth-share-photo-02.png" alt="見つけた小石を先生に見せる子ども"></figure><span class="growth-step">03</span><h3>発見を伝える</h3><p>見つけたことを誰かに話すことで、経験が自分のものになります。</p></article></div></div></section>
